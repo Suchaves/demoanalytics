@@ -9,7 +9,7 @@
 	<meta charset="UTF-8">
 	<title>Form &mdash; Demo Analytics GDG Pura Vida</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Sección de promos en App Demo Google Analytics" />
+	<meta name="description" content="Sección de Afiliaciones al App Demo Analytics" />
 	<meta name="keywords" content="Google Analytics, Certified Advanced Analytics, GDG Pura vida, Certificación Google" />
 	<meta name="author" content="FreeHTML5.co" />
 
@@ -45,13 +45,12 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'INGRESE_SU_ID');
-var dimensionValue = 'producto_X';
-gtag('set', 'dimension1', dimensionValue);
-
+var metricValue = '123';
+ga('set', 'metric1', metricValue);
 </script>
 
-<body>
 
+<body>
 
 <div id="page-wrap">
 
@@ -67,28 +66,18 @@ gtag('set', 'dimension1', dimensionValue);
 				<span class="navbar-toggler-icon"></span>
 			</button>
 
-			
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav nav-items-center ml-auto mr-auto">
 					<li class="nav-item active">
-						<a  href="form.html"  class="nav-link" onClick=”ga(‘send’, ‘event’, {‘Contactar‘, ‘Click‘, ‘Form‘, ‘50‘});”>Formulario </a>
+						<a  href="#"  class="nav-link" onClick=”ga(‘send’, ‘event’, {‘Contactar‘, ‘Click‘, ‘Form‘, ‘50‘});”>Buscar Dominio </a>
 					</li>
 					<li class="nav-item active">	
-						<a  href="form.html"  class="nav-link" class="ga-event" onClick=”ga(‘send’, ‘event’, { eventCategory: ‘Contact ‘, eventAction: ‘Submit’, eventLabel: ‘Contact Page Form’, eventValue: 50});”>Inscripción </a>
+						<a  href="pago.html"  class="nav-link" class="ga-event" onClick=”ga(‘send’, ‘event’, { eventCategory: ‘Contact ‘, eventAction: ‘Submit’, eventLabel: ‘Contact Page Form’, eventValue: 50});”>Comprar </a>
 					</li>
 
-					<li class="nav-item">
-						<a class="nav-link" href="afiliarse.html" class="ga-event" onClick=”ga(‘send’, ‘event’, { eventCategory: ‘Contactar ‘, eventAction: ‘Click’, eventLabel: ‘Form’, eventValue: 50});”>Features</a>
-					</li>
-
-
-					<li class="nav-item">
-						<a href=”prueba.html” class="nav-link" onClick=”_gaq.push([‘_trackEvent’, ‘Event Category’, ‘Event Action’, ‘Event Label’]);”>Prueba Events</a>
-					</li>
-
+					
 
 				</ul>
-
 				<div class="social-icons-header">
 					<a href="https://www.facebook.com/fh5co"><i class="fab fa-facebook-f"></i></a>
 					<a href="https://freehtml5.co"><i class="fab fa-instagram"></i></a>
@@ -98,19 +87,32 @@ gtag('set', 'dimension1', dimensionValue);
 		</nav>
 
 		<div class="container fh5co-hero-inner">
-			<h1 class="animated fadeIn wow" data-wow-delay="0.4s">Promociones del App</h1>
-<iframe src="https://giphy.com/embed/XtdKEIig98R4f8Muq8" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="form.html">Suscribirme</a></p>
+			<h1 class="animated fadeIn wow" data-wow-delay="0.4s">Registre su dominio .cr</h1>
+			<h2 class="animated fadeIn wow" data-wow-delay="0.4s">Buscar Dominio</h2>
 
-			<p class="animated fadeIn wow" data-wow-delay="0.67s">Powered by GDG Pura Vida </p>
-			<button class="btn btn-md download-btn-first wow fadeInLeft animated" data-wow-delay="0.85s" onclick="$('#fh5co-download').goTo();return false;">Download</button>
-			<button class="btn btn-md features-btn-first animated fadeInLeft wow" data-wow-delay="0.95s" onclick="$('#fh5co-features').goTo();return false;">Features</button>
-			<img class="fh5co-hero-smartphone animated fadeInRight wow" data-wow-delay="1s" src="img/phone-image.png" alt="Smartphone">
-		</div>
+
+
+<div class="gtco-container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="col-md-6 animate-box">
+					
+					<form action="#">
+						<div class="row form-group">
+							<div class="col-md-12">
+								<label class="sr-only" for="name">Nombre</label>
+								<input type="text" id="name" class="form-control" placeholder="Ingrese el dominio .cr que busca">
+							</div>
+							
+						</div>
+					
+<iframe src="https://giphy.com/embed/3ohzdZ44Q62CJ2ekla" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="pago.html">Comprar dominio</a></p>
+
+
+	</div>
 
 
 	</div> <!-- first section wrapper -->
-
-
 
 	<!-- ==========================================================================================================
                                                SECTION 7 - SUB FOOTER
@@ -161,16 +163,4 @@ gtag('set', 'dimension1', dimensionValue);
 	<script src="js/main.js"></script>
 </body>
 </html>
-© 2019 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
 
